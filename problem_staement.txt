@@ -1,0 +1,19 @@
+# Sentiment Analysis of Movie Reviews
+
+## Objective:
+The goal of this project is to build a machine learning model that can automatically classify a given movie review as **positive** or **negative** based on its textual content.
+
+## Problem Statement:
+Given a dataset of 50,000 IMDB movie reviews labeled as either positive or negative, the task is to apply Natural Language Processing techniques to preprocess the text and train a classifier that can accurately predict the sentiment of new, unseen reviews.
+
+## Why It Matters:
+Sentiment Analysis helps businesses, media, and platforms understand public opinion at scale. This project simulates a real-world NLP application that can be extended to social media analysis, product reviews, customer feedback, etc.
+
+## Input:
+- A text string containing a movie review (e.g., “The film was amazing!”)
+
+## Output:
+- A predicted sentiment label: `Positive` or `Negative`
+
+## Dataset Source:
+[IMDB Movie Reviews Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
