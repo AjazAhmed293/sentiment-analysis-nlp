@@ -13,4 +13,5 @@ env/
 # OS files
 .DS_Store
 Thumbs.db
-tempcoderunner.py
+tempCodeRunnerFile.py
+*.npy
