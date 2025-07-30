@@ -15,3 +15,4 @@ env/
 Thumbs.db
 tempCodeRunnerFile.py
 *.npy
+data/cleaned_imdb_dataset.csv
