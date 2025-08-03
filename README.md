@@ -41,9 +41,12 @@ Text cleaning and preprocessing were performed using NLTK and regex. Steps inclu
 
 ## 🧪 Model Training & Evaluation
 
-### 🔸 Algorithm: Multinomial Naive Bayes
-- Trained using both `X_count` and `X_tfidf` feature sets  
-- Evaluated on 80/20 train-test split
+### 🔸 Algorithms Used:
+- **Multinomial Naive Bayes**
+- **Gaussian Naive Bayes**
+- **Logistic Regression**
+
+All models were trained using both `CountVectorizer` and `TF-IDF` features.
 
 ### 🔸 Evaluation Metrics:
 - **Accuracy**  
@@ -52,7 +55,14 @@ Text cleaning and preprocessing were performed using NLTK and regex. Steps inclu
 - **F1-Score**  
 - **Confusion Matrix**
 
-> ✅ All metrics printed and compared using `classification_report` and `confusion_matrix` from scikit-learn.
+> ✅ Evaluation done using `classification_report` and `confusion_matrix` from scikit-learn.  
+> ✅ Logistic Regression with TF-IDF gave the best performance.
+
+---
+
+## 🧠 Best Model
+- **Model**: Logistic Regression (TF-IDF)
+- **Saved As**: `data/best_model.pkl`
 
 ---
 
@@ -73,7 +83,9 @@ sentiment-analysis-nlp/
 ├── data/
 │ ├── IMDB Dataset.csv
 │ ├── X_count.npy
-│ └── X_tfidf.npy
+│ ├── X_tfidf.npy
+│ ├── best_model.pkl
+│ └── cleaned_imdb_dataset.csv
 ├── project.py
 ├── problem_staement.txt
 ├── README.md
@@ -87,21 +99,22 @@ sentiment-analysis-nlp/
 - Text preprocessing and cleaning  
 - Feature engineering using CountVectorizer & TF-IDF  
 - Saved transformed features as `.npy`  
-- Model training with Naive Bayes  
-- Model evaluated with key metrics  
-- GitHub repo updated daily
+- Model training with Multinomial NB, Gaussian NB, and Logistic Regression  
+- Evaluated all models on key metrics  
+- Identified and saved best-performing model (`Logistic Regression`)  
+- Updated GitHub repo with daily progress
 
 ---
 
 ## 🔮 Upcoming Tasks
-- Logistic Regression model  
-- Model performance comparison  
-- Experiment with Tfidf-based training  
-- Visualize performance using Matplotlib or Seaborn  
-- Prepare for deployment using Streamlit
+- Visualize model performance using Seaborn/Matplotlib  
+- Deploy model using Streamlit (Web App)  
+- Prepare demo video or presentation  
+- Add model prediction interface  
+- Write detailed blog/documentation  
 
 ---
 
 ## 👨‍💻 Author
-Ajaz Ahmed  
+**Ajaz Ahmed**  
 [GitHub Profile](https://github.com/AjazAhmed293)
